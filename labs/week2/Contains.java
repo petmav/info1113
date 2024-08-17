@@ -1,16 +1,17 @@
 public class Contains {
 
-    void static main(String[] args) {
-        String s = args[0];
-    }
+  public static void main(String[] args) {
+    ;
+  }
 
-    static boolean contains(int[] a, int b) {
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] == b) {
-                return true;
-            }
-        }
-        return false;
-    }
+  static boolean contains(int[] a, int b) {
 
+    // simple for loop to check if b is in a via boolean
+    for (int num : a) {
+      if (num == b) {
+        return true;
+      }
+    }
+    return false;
+  }
 }
